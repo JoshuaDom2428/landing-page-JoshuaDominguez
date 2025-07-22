@@ -1,0 +1,64 @@
+@font-face {
+  font-family: PoppinsBlack;
+  src: url(./assets/fonts/Poppins-Black.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsBlackItalic;
+  src: url(./assets/fonts/Poppins-BlackItalic.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(./assets/fonts/Poppins-Bold.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsBoldItalic;
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsExtraBold;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsExtraLight;
+  src: url(./assets/fonts/Poppins-ExtraLight.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsLightItalic;
+  src: url(./assets/fonts/Poppins-ExtraLightItalic.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsItalic;
+  src: url(./assets/fonts/Poppins-Italic.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url(./assets/fonts/Poppins-Light.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(./assets/fonts/Poppins-Medium.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(./assets/fonts/Poppins-Regular.ttf) format(opentype);
+}
+
+/* Vinculamos Google Fonts y Material Icons */
+
+body {
+  font-family: 'Poppins' ;
+}
+
+h1 {
+  font-family: 'Poppins' ;
+}
