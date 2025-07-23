@@ -48,17 +48,59 @@
   src: url(./assets/fonts/Poppins-Medium.ttf) format(opentype);
 }
 
+/*Estilos Personalizados
+Aqui vamos a estilar todas las secciones, sus contenidos y el responsivo.
+
 @font-face {
   font-family: PoppinsRegular;
   src: url(./assets/fonts/Poppins-Regular.ttf) format(opentype);
 }
+/* 
 
 /* Vinculamos Google Fonts y Material Icons */
 
+.navbar-menu {
+  display: flex;
+  gap: var(--space-medium);
+}
+
 body {
   font-family: 'Poppins' ;
+  background-color: blue;
 }
 
 h1 {
   font-family: 'Poppins' ;
 }
+
+/* Header */
+
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-normal);
+}
+
+
+.navbar-menu a {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+}
+
+.navbar-menu a:hover {
+  color: var(--purple-color);
+}
+
