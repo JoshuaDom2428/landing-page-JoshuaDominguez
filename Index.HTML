@@ -4,25 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joshua Dominguez</title>
-  <link rel="stylesheet" href="./CSS/Style.Css">
+  <link rel="stylesheet" href="./CSS/Style.css">
   <link rel="icon" href="./Fav-Icon-JoshuaDominguez.png" type="image/png"/>
 
     <!-- stylesheet -->
 
 
-   <link rel="stylesheet" href="./CSS/global.CSS">
-
+   <link rel="stylesheet" href="./CSS/global.css">
    <link rel="stylesheet" href="./CSS/resset.css">
 
     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Material Icons -->
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 
 </head>
-<body>
+<body>  
+
+  <!--header-->
   
-  <head class="header">
+  <header class="header">
     <nav class="navbar">
       <div class="navbar-logo">
         <img src="./Fav-Icon-JoshuaDominguez.png" alt="Joshua Logo">
@@ -37,41 +41,65 @@
       </ul>
 
        <button  class="button-primary">Llamar<span class="material-symbols-outlined">phone</span></button>
-     </nav>
-
-  </head>
+    </nav>
  </header>
 
-
-
-
-
-
   <main>
-
-
     <!-- Hero -->
 
-
     <section class="hero">
+      <div class="hero-content"> 
 
-
-      <div class="hero-content">
-
-
-        <h1>
-          <img src="./assets/JoshuaDominguez_Foto.jpeg" alt="Joshua Dominguez Foto">
-        </h1>
-        <p class="hero-text">Grandes mentes para grandes proyectos</p>
-        <div class="hero-actions">
-          <button class="button-secondary">Llamar</button>
-        </div>
+        <img src="./assets/JoshuaDominguez_Foto.jpeg" alt="Joshua Dominguez Foto">
+        <h1>Joshua Dominguez</h1>
         <p class="hero-text">Hola! Soy Joshua Dominguez diseñador con especialidad en marketing digital y</p>
         <p class="hero-text">diseño aplicado con un enfoque publicitario</p>
+        <p class="hero-text">Grandes mentes para grandes proyectos</p>
 
+        <div class="hero-actions">
+          <button class="button-primary">Llamar</button>
+          <button class="button-secondary">Watch Demo Reel <span class="material-symbols-outlined"> play_circle </span></button>
+          
+        </div>
+
+        <div class="hero-icons">
+        <img src="./assets/Icons/Behance.svg" alt="Logotipo Behance">
+        <img src="./assets/Icons/Facebook.svg" alt="Logotipo Facebook">
+        <img src="./assets/Icons/Instagram.svg" alt="Logotipo Instagram">
+        <img src="./assets/Icons/Tiktok.svg" alt="Logotipo Tiktok">
       </div>
-    </section>
-  </main>
+    </div>
+   </section>
 
+   <!--Work-->
+<section class="Work">
+<div class="wrapper">
+  <div class="work-header">
+    <h2>Work</h2>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+
+  <div class="work-content">
+    <div class="work-thumbnails">
+      <ul class="thumbnails-list">
+        <li class="thumbnail-item"><img src="./assets/Work/Thumb-1.png" alt="Work 1 Thumbnail"></li>
+        <li class="thumbnail-item"><img src="./assets/Work/Thumb-2.png" alt="Work 2 Thumbnail"></li>
+        <li class="thumbnail-item"><img src="./assets/Work/Thumb-3.png" alt="Work 3 Thumbnail"></li>
+        <li class="thumbnail-item"><img src="./assets/Work/Thumb-4.png" alt="Work 4 Thumbnail"></li>
+        <li class="thumbnail-item"><img src="./assets/Work/Thumb-5.png" alt="Work 5 Thumbnail"></li>
+        <li class="thumbnail-item"><img src="./assets/Work/Thumb-6.png" alt="Work 6 Thumbnail"></li>
+      </ul>
+    </div>
+    <div class="work-showcase">
+      <img src="./assets/Work/Photography-1.png" alt="Work 1 Full Image" class="work-image">
+      <div class="work-info">
+        <h3>Joyería Brasil</h3>
+        <p>Fotografía de producto "aretes pendulo"</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
 </body>
 </html>
