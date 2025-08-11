@@ -1,149 +1,262 @@
-/* Vinculamos Google Fonts y Material Icons */
+/* 
 
-.navbar-menu {
-  display: flex;
-  gap: var(--space-medium);
-}
+  Estilos Personalizados
+
+  Aqui vamos a estilar todas las secciones, sus contenidos y el responsivo.
+
+
+*/
 
 body {
-  font-family: 'Poppins', sans-serif ;
-  background-color: blue;
-}
-
-h1 {
-  font-family: 'Poppins' ;
+    background-color: var(--dark-color);
 }
 
 /* Header */
-
-
-
 .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 /* Navbar */
-
-
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-normal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-medium);
+
+    background-color: var(--green-color-transparent);
+    backdrop-filter: 10px;
 }
 
+.navbar-menu {
+    display: flex;
+    color: var(--white-color);
+    gap: var(--space-medium);
+}
 
 .navbar-menu a {
-  font-family: var(--font-primary);
-  text-transform: uppercase;
-  color: var(--white-color);
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
 }
 
 .navbar-menu a:hover {
-  color: var(--orange-color);
+    color: var(--dark-color);
 }
 
 /* Hero */
-
 .hero {
-  height: 100vh;
-  min-height: 700px;
-  background-color: var(--white-color);
+    height: 100vh;
+    min-height: 100px;
+    background-image: url("../assets/Principal.JPG" );
+    filter: brightness(80%);
+    background-size: cover;
+    background-position: center;
+    color: var(--ligth-color);
 
-display: flex;
-justify-content: center;
-align-items: center;
-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--dark-color);
+
+    background-color: var(--dark-color-transparent);
 }
 
-.hero-content {
- width: 50%;
-}
 
 .hero-content p {
-  /*font-size: 1.125rem;
-  margin-bottom: var(--space-small);
-  max-width: 80%;
-text-align: center;*/
-
- width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
-
+    font-size: 1.5rem;
+    margin-bottom: var(--space-small);
+    text-align: center;
+    color: var(--white-color);
 }
 
 .hero-actions {
-  display: flex;
-  gap: var(--space-small);
-  margin-bottom: var(--space-medium);
-  justify-content: center;
+    display: flex;
+    gap: var(--space-small);
+    margin-bottom: var(--space-medium);
+    justify-content: center;
 }
-
-
 
 .hero-icons {
-  display: flex;
-  gap: var(--space-small);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-normal);
 }
 
-.hero-text {
-  font-family: 'Poppins';
+/* Work */
+.works {
+    font-family: var(--font-primary);
+    background-color: var(--dark-color);
+    color: var(--white-color);
 }
 
-/* Work */ 
-
-.work {
-  background-color: var(--light-color);
+.works-header {
+    margin-bottom: 1.5rem;
 }
 
-.work-header {
-  margin-bottom: 1rem;
+.works-title {
+    padding: 1.5rem;
+    color: var(--white-color);
 }
 
-.work-content {
-  display: flex;
-  align-items: center;
+.works-content {
+    display: flex;
+    align-items: center;
 }
 
-.work-thumbnails {
-  width: 50%;
+.works-thumbnails {
+    width: 50%;
 }
 
 .thumbnail-item {
-  border-radius: 1rem;
-  overflow: hidden;
-  cursor: pointer;
-  filter: brightness(0.7);
-  transition: filter 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
 }
 
 .thumbnail-item:hover {
-filter: brightness(1);
+    filter: brightness(1);
 }
 
 .thumbnails-list {
-  display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  gap: var(--space-small);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-medium);
 }
 
-.work-showcase {
-  width: 50%;
+.games-showcase {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-medium);
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.games-text {
+    color: var(--white-color);
+    padding: 20%;
+}
+
+.games-info {
+    text-align: center;
+}
+
+/* Trailers */
+.media {
+    background-color: var(--green-color)
+}
+
+.media-header {
+    text-align: center;
+    margin-bottom: var(--space-medium);;
+}
+
+.carucel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-medium);
+    margin-bottom: var(--space-medium);
+}
+
+.carousel-item {
+    position: relative;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: filter 0.3s ease;
+}
+
+.carousel-item:hover img {
+    filter: brightness(1);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.carousel-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.carousel-item:hover span {
+    color: var(--green-color);
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-controls button {
+    color: var(--dark-color);
+    background-color: var(--green-color);
+}
+
+.carousel-controls button:hover {
+    color: var(--white-color);
+}
+
+.carousel-controls span {
+    font-size: 3rem;
+}
+
+/* Coleccionables */
+.coleccionables {
+    background-image: url("../Asset/images/fono-steve.png");
+    background: linear-gradient(to right, #45ef1f, #b0eeff, #0dfc00);
+}
+
+
+.about > div {
+  display: flex
+  padding: var(--space-large)
+}
+
+.about-image,
+.aout-content {
+  width:50%;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 240px;
+  max-width: 300px;
+  min-width: 200;
+}
+
+.about-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-medium);
+  justify-content: center;
 }
 
-.work-info {
-  text-align: center;
-}
-
-.work-image {
-  border-radius: 1rem;
-  display: flex;
-  gap: var(--space-medium);
-}
+.about-content h2
+.about-content p {
+  color: var(--azulfuerte-color)
+  }
