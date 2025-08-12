@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--dark-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Header */
@@ -26,7 +27,7 @@ body {
     align-items: center;
     padding: var(--space-medium);
 
-    background-color: var(--green-color-transparent);
+    background-color: var(--red-color-transparent);
     backdrop-filter: 10px;
 }
 
@@ -129,7 +130,7 @@ body {
     gap: var(--space-medium);
 }
 
-.games-showcase {
+.works-showcase {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -139,18 +140,19 @@ body {
     width: 50%;
 }
 
-.games-text {
+.works-text {
     color: var(--white-color);
     padding: 20%;
+    font-size: large;
 }
 
-.games-info {
+.works-info {
     text-align: center;
 }
 
 /* Trailers */
 .media {
-    background-color: var(--green-color)
+    background-color: var(--red-color)
 }
 
 .media-header {
@@ -221,14 +223,18 @@ body {
     font-size: 3rem;
 }
 
-/* Coleccionables */
-.coleccionables {
-    background-image: url("../Asset/images/fono-steve.png");
-    background: linear-gradient(to right, #45ef1f, #b0eeff, #0dfc00);
+/* About Me */
+.about-me {
+    background-image: url("../assets/JoshuaDominguez.png");
+    background: linear-gradient(to right, #850000, #ffc548, #850000);
+    padding: 50px;
 }
 
+.about-me-text {
+text-shadow: 2px 2px 4px black;
+}
 
-.about > div {
+.about {
   display: flex
   padding: var(--space-large)
 }
@@ -245,9 +251,10 @@ body {
 }
 
 .about-image img {
-  width: 240px;
-  max-width: 300px;
-  min-width: 200;
+  width: 120px;
+  max-width: 150px;
+  min-width: 100;
+  
 }
 
 .about-content {

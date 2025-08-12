@@ -6,16 +6,16 @@
 */
 
 :root {
-    --green-color: #b97f00;
+    --red-color: #790e00;
     --dark-color: #171615;
     --white-color: #FFFFFF;
     --botom-color: #00146d;
     --color-product: #262423;
 
-    --font-primary: 'Jersey 10';
-    --font-secondary: 'Jersey 10';
+    --font-primary: 'Poppins';
+    --font-secondary: 'Poppins';
 
-    --green-color-transparent: #00718097; 
+    --red-color-transparent: #ff000097; 
 
     --space-small: 16px;
     --space-normal: 24px;
@@ -44,11 +44,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     color: var(--dark-color);
-    text-transform: uppercase;
+
 }
 
+p {
+    color: rgb(235, 254, 255);
+}
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -89,8 +92,8 @@ section {
 }
 
 .button-primary:hover {
-    color: var(--dark-color);
-    background-color: var(--green-color);
+    color: var(--white-color);
+    background-color: var(--red-color);
 }
 
 .button-secondary {
@@ -109,7 +112,7 @@ section {
 
 .button-secondary:hover {
     color: var(--dark-color);
-    background-color: var(--green-color);
+    background-color: var(--red-color);
 }
 
 /* Wrapper */
