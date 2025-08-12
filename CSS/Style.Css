@@ -68,6 +68,7 @@ body {
 
 
 .hero-content p {
+    align-items: center;
     font-size: 1.5rem;
     margin-bottom: var(--space-small);
     text-align: center;
@@ -108,6 +109,10 @@ body {
     align-items: center;
 }
 
+.works-text {
+    color: var(--white-color);
+    font-size: large ;
+}
 .works-thumbnails {
     width: 50%;
 }
@@ -141,9 +146,7 @@ body {
 }
 
 .works-text {
-    color: var(--white-color);
     padding: 20%;
-    font-size: large;
 }
 
 .works-info {
@@ -224,8 +227,8 @@ body {
 }
 
 /* About Me */
-.about-me {
-    background-image: url("../assets/JoshuaDominguez.png");
+.aboutme {
+    background-image: );
     background: linear-gradient(to right, #850000, #ffc548, #850000);
     padding: 50px;
 }
